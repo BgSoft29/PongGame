@@ -140,12 +140,13 @@ var game = function(){
     }
     // Para leer cuando se deja de presionar
     document.onkeyup = function(e){
-        // if(e.key == 'q' || e.key == 'a'){
-        //     player1.keyPress = false;
-        // }
-        // if(e.key == 'ol' || e.key == 'l'){
-        //     player2.keyPress == false;
-        // }
+        if(e.key == 'q' || e.key == 'a'){
+            player1.keyPress = false;
+            // console.log("se dejo de presionar a y q");
+        } else if (e.key == 'o' || e.key == 'l'){
+            player2.keyPress = false;
+            // console.log("se dejo de presionar o o l");
+        }
     }
 
     start();
